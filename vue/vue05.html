@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>컴포넌트를 사용한 작성방법</title>
+  </head>
+  <body>
+    <ol>
+        <!-- todo-item 컴포넌트의 인스턴스 만들기 -->
+        <todo-item></todo-item>
+      </ol>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    
+    <script>
+// todo-item 이름을 가진 컴포넌트를 정의합니다
+Vue.component('todo-item', {
+  template: '<li>할일 항목 하나입니다.</li>'
+})
+    </script> 
+  </body>
+</html>

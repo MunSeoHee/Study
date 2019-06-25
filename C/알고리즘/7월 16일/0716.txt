@@ -1,0 +1,95 @@
+// Fibo { 0 , 1 ,1 ,2 ,3, 5, 8 , 13 , 21 , ...}
+Fibo[2] == 1
+Fibo[1] == 1
+
+1번
+  #include<cstdio>
+  int main() {
+      int t,n,f[42]={1,0,1};
+      for(int i=3;i<42;i++)
+          f[i]=f[i-2]+f[i-1];
+      scanf("%d",&t);
+      while(t—) {
+          scanf("%d",&n);
+          printf("%d %d\n",f[n],f[n+1]);
+      }
+  }
+
+
+2번
+// 소수는 False 소수가 아니면 True
+//소수의 배수를 전부 True로 바꿔주는 식으로 소수인지 아닌지를 계산한다.
+#include <cstdio>
+using namespace std;
+
+bool table[1000001];
+
+int main() {
+   int start, end;
+
+   scanf("%d %d", &start, &end);
+
+   for (int i = 2; i <= end; i++) {
+      if (!table[i]) {
+         for (int j = i + i; j <= end; j += i) {
+            table[j] = true;
+         }
+      }
+   }
+   table[0] = table[1] = true;
+   for (int i = start; i <= end; i++) {
+      if (!table[i]) printf("%d\n", i);
+   }
+}
+
+
+//손으로 쓰는것이 매우 중요하다.
+3번
+#include <vector>
+using namespace std;
+int m,n,x;
+vector<int> v;
+int main(){
+  printf("<");
+  scanf("%d%d",&m,&n);
+  for(int i=1;i<=m;i++)
+    v.push_back(i);
+  while(v.size()>1){
+    x+=n-1;
+    x%=v.size(); // 사이즈만큼 나누면 결국 사이즈보다 작은 숫자가 된다.
+    printf("%d, ",v[x]);
+    v.erase(v.begin()+x); // 이부분을 통해서 기존에 array의 index가 재조정된다.
+  }
+    x+=n-1;
+    x%=v.size();
+    printf("%d>",v[x]);
+  return 0;
+}
+
+4번
+#include <cstdio>
+using namespace std;
+int main() {
+   int t, n, r;
+   int i;
+   long long *table;
+   scanf("%d", &t);
+   table = new long long int[t];
+
+   for(i=0;i<t;i++) {
+      scanf("%d %d", &r, &n);
+
+      long long int result = 1;
+      int j;
+
+      for (j = 1; j <= r; j++) {
+         result = result * n-- / j;
+      }
+
+      table[i] = result;
+   }
+
+   for (i = 0; i < t; i++) {
+      printf("%d\n", table[i]);
+   }
+}

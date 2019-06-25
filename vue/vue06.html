@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>보간법</title>
+  </head>
+  <body>
+    <!-- <div id="app">
+       Using mustaches : {{ message }}
+       Using v-html directive : <span v-html="message"></span>
+    </div> -->
+
+    <div id="app">
+        <!-- <div v-bind:id="message"></div> -->
+        <button v-bind:disabled="message">Button</button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+            message: true
+        }
+    })
+    </script> 
+  </body>
+</html>

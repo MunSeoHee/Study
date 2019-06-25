@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>자바스크립트 표현식 사용 시 주의할 점</title>
+    </head>
+    <body>
+        <div id="app">
+            <!-- {{ var a = 10; }}
+            {{ if (true) {return 100} }} -->
+            {{ true ? 100 : 0 }}
+
+            <!-- {{ message.split('').reverse().join('') }} -->
+            {{ reversedMessage }}
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+        <script>
+            new Vue({
+                el:'#app',
+                data: {
+                    message: 'hello vue.js!'
+                },
+                computed: {
+                    reversedMessage: function(){
+                        return this.message.split('').reverse().join('');
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

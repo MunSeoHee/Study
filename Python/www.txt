@@ -1,0 +1,4 @@
+Label = 레이블 위젯 생성
+Button = 버튼 위젯 생성
+Canvas = 그림 그릴 수 있는 위젯
+bind = 
