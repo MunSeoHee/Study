@@ -1,0 +1,22 @@
+<script>
+    var game=prompt("가위 바위 보 중 선택","가위");
+    var gameNum;
+    switch(game){
+        case "가위":
+            gameNum=1;
+            break;
+        case "바위":
+            gameNum=2;
+            break;
+        case "보":
+            gameNum=3;
+            break;
+    }
+    var com = Math.ceil(Math.random()*3);
+
+    if(gameNum==com){
+        document.write(com +"-"+gameNum+":"+"맞췄습니다");
+    }else{
+        document.write(com +"-"+gameNum+":"+"틀렸습니다");
+    }
+</script>

@@ -1,0 +1,19 @@
+<script>
+    var today = new Date();
+    var nowMonth=today.getMonth(),
+    nowDate = today.getDate(),
+    nowDay = today.getDay();
+
+    document.write("month : "+nowMonth+"<br>");
+    document.write("date : "+nowDate+"<br>");
+    document.write("day : "+nowDay+"<br>");
+
+    var worldcup = new Date(2002,4,31);
+    var theMonth = worldcup.getMonth(),
+    theDate = worldcup.getDate(),
+    theDay=worldcup.getDay(); //요일 -> 5->금요일
+
+    document.write("month : "+theMonth+"<br>");
+    document.write("date : "+theDate+"<br>");
+    document.write("day : "+theDay+"<br>");
+</script>
