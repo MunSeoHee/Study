@@ -1,0 +1,24 @@
+<script>
+    function Func(num) {
+        var tag = document.getElementById("close")
+        if(num==0){
+            tag.classList.remove('close');
+        }else{
+            tag.classList.add('close');
+        }
+        
+    }
+</script>
+<style>
+    .close{
+        display: none;
+    }
+</style>
+
+<body id="body">
+    <div id="close">
+        ㅎㅎㅎㅎㅎㅎㅎ
+    </div>
+    <button onclick="Func(0)">보기</button>
+    <button onclick="Func(1)">닫기</button>
+</body>
