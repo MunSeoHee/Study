@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제</title>
+
+    <style>
+        @font-face {
+            font-family: 'CookieRunOTF-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .container {
+            background-color: #F3F3F3;
+            position: relative;
+
+        }
+
+        .info{
+            margin-left: 15vw;
+            margin-right: 15vw;
+        }
+
+        .box {
+            background-color: #FFFFFF;
+            margin: 3vh;
+            padding: 1vh;
+            padding-left: 3vw;
+            padding-right: 3vw;
+        }
+
+        #search {
+            width: 300px;
+            height: 100%;
+            padding: 10px;
+            border: 1px solid yellow;
+            outline: none;
+            float: left;
+        }
+
+        #search1 {
+            width: 50px;
+            height: 38px;
+            border: 0px;
+            border: 1px solid yellow;
+            outline: none;
+            float: right;
+        }
+
+        h4 {
+            position: relative;
+            padding-top: 5vh;
+            padding-left: 4vh;
+            margin-bottom: 1vh;
+        }
+
+        .box1 {
+            float: left;
+        }
+
+        .box2 {
+            float: right;
+        }
+
+        .box3 {
+            clear: both;
+        }
+
+        #submitbutton {
+            width: 180px;
+            height: 50px;
+            font-size: 15px;
+
+            line-height: 50px;
+            text-align: center;
+            background: #F7C726;
+            color:white;
+            border: solid 2px #F7C726;
+            border-radius: 30px;
+            margin-bottom: 10vh;
+            margin-top: 3vh;
+            font-weight: bold;
+        }
+
+        h5~p {
+            font-family: 'CookieRunOTF-Bold';
+            color: #F7C726;
+        }
+
+        input {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        body{
+            margin: 0;
+        }
+        input{
+            border-bottom: black solid 1px;
+            width: 28vw;
+            text-align: center;
+        }
+        .right{
+            margin-left: 2vw;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav">
+
+        <nav>
+            <img src="asd.png" style="float:left;margin-right: 100px;">
+            <form action="" method="get" style="float:left;margin-right: 100px;">
+                <input type="text" id="search" placeholder="어린이집 이름을 입력해 주세요.[예]사자어린이집">
+                <button id="search1"><img src="zz.jpg" width="50px" height="38px"></button>
+            </form>
+            <p>
+                서비스소개 어린이집등록 회원가입 <a href="login.page"><img src="aaaaaaaa.png"></a>
+            </p>
+        </nav>
+        <hr>
+    </div>
+    <div class="review">
+        <div class="info">
+            <p>ㅣ리뷰작성ㅣ</p>
+            <h5>
+                강남엄마에 확인 리뷰를 남기시면 모든 리뷰를 열람하실 수 있습니다.<br>
+                작성하신 리뷰는 익명으로 저장되며 작성자의 개인정보는 어디에도 노출되지 않습니다.<br>
+
+                리뷰 제출시 운영팀에 의해 심사가 이루어지며, 아래의 경우 리뷰 심사에서 탈락됩니다.<br>
+                -구체적이지 못한 리뷰나 비방,욕설,허위사실이 포함된 리뷰<br>
+                어린이집 측 홍보성 리뷰로 판단되는 리뷰
+            </h5>
+        </div>
+    </div>
+    <div class="container">
+        <div class="info">
+            <h4>1.어린이집 정보</h4>
+            <div class="box">
+                <h5>어린이집 이름</h5>
+                <input name="kindergardenname" id="kindergardenname" type="text" class="input">
+                <h5>어린이집위치</h5>
+                <input type="text" name="location" value="특별시/도">
+
+                <input class="right" type="text" name="location1" value="시/군/구"><br><br>
+
+                <input type="text" name="location2" value="읍/연/동"><br><br>
+            </div>
+            <h4>2.어린이집 평가</h4>
+            <div class="box">
+                <h5>아이 연령(현재)</h5>
+                <input name="year" id="year" type="number" class="input">
+                <p>ㅣ지도 교사 평가</p>
+                <div class="box1">
+                    <h5>지도 교사 이름</h5>
+                    <input type="text" name="professor" value="">
+                </div>
+                <div class="box2">
+                    <h5>지도 교사 평점</h5>
+                    <input class="right" type="number" name="profgrade" placeholder="-/5.0점">
+                </div>
+                <div class="box3">
+                    <h5>지도 교사 평가</h5>
+                    <input type="text" name="profgrade1" value="지도 선생님의 지도 스타일에 대해 평가해주세요. "
+                        style="width: 50%;"><br><br>
+                </div>
+
+                <p>ㅣ어린이집 시설 평가</p>
+                <div class="box1">
+                    <h5>어린이집 방문 경험</h5>
+                    <input type="text" name="kinvisit" value="유/무">
+                </div>
+                <div class="box2">
+                    <h5>어린이집 시설 평점</h5>
+                    <input class="right" type="number" name="kingrade" placeholder="-/5.0점">
+                </div>
+                <div class="box3">
+                    <h5>교육시설 평가</h5>
+                    <input type="text" name="kingrade2" value="어린이집의 시설 상태에 대해 평가해주세요. " style="width: 50%;"><br><br>
+                </div>
+
+
+                <p>ㅣ어린이집 총괄 평가</p>
+
+                <h5>어린이집 평점</h5>
+                <input type="number" name="kingrade3" placeholder="-/5.0점">
+
+                <h5>교육시설 평가</h5>
+                <input type="text" name="kingrade2" value="어린이집의 전체적인 부분에 대해 평가해주세요. " style="width: 50%;"><br><br>
+            </div>
+        </div>
+        <center><button type="button" name="submint" id="submitbutton">제출하기</button><br></center>
+    </div>
+    
+    <center>
+        <div>
+            <h5>
+
+                www.naver.com comcomcocmcocmcomcocm<br>
+                전화번호: 010 2222 2222 이메일 : 어려워@naver.com<br>
+                copyright: 알게뭐람
+            </h5>
+        </div>
+    </center>
+</body>
+
+</html>

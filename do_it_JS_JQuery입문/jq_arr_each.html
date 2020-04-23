@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            var obj=[{
+                "area":"서울"
+            },{
+                "area":"부산"
+            },{
+                "area":"전주"
+            }]
+
+            $(obj).each(function(i,o){
+                console.log(i+":"+o);
+            });
+            $.each($("#menu li"),function(i,o){
+                console.log(i+":"+o);
+            });
+            $("#menu li").each(function(){
+                console.log($(this));
+            })
+        });
+    </script>
+</head>
+<body>
+    <ul id="menu">
+        <li>
+            리스트1
+        </li>
+        <li>
+            리스트2
+        </li>
+        <li>
+            리스트3
+        </li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $("p").mouseover(function(){
+                $(this).css("width","50vw").css("height","50vh");
+            })
+            $("p").mouseout(function(){
+                $(this).css("width","10vw").css("height","10vh");
+            })
+        });
+    </script>
+</head>
+<style>
+    p{
+        width: 10vw;
+        height: 10vh;
+        background-color: black;
+    }
+</style>
+<body>
+    <p>ㅎㅎㅎㅎ</p>
+</body>
+</html>

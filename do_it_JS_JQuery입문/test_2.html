@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+    </ol>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+    </ol>
+</body>
+<script> // document.getElementsByTagName('xx') 하면 xx들을 유사배열로 만들어준다 
+    var ul = document.getElementsByTagName('ol')[0]; //document 를 이용하여 ol요소들중[0]을 객체에 저장한다 
+    var lis = ul.getElementsByTagName('li'); //ul[0]의 요소들 중의 li 를 갖고있는 요소들의 집합 
+    for (var i = 0; i < lis.length - 1; i++) {
+        lis[i].style.color = 'red';
+    } 
+</script>
+
+</html>
