@@ -199,3 +199,6 @@ router.post('/add-product', (req, res)=>{
 > [GET] /admin/add-product 요청은 첫번째 미들웨어가 실행
 
 > [POST] /admin/add-product 요청은 두번째 미들웨어가 실행
+
+
+d
